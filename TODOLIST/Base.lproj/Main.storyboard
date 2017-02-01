@@ -51,6 +51,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="QbF-5M-NfP"/>
+                    <connections>
+                        <outlet property="itemView" destination="I5t-0A-k96" id="8nL-q1-zvt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,17 +87,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="7aV-Qn-7lG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Uc-kn-jH4" secondAttribute="trailing" constant="156" id="B3T-Eu-YMN"/>
-                            <constraint firstItem="7Uc-kn-jH4" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="155" id="BOO-SZ-vVX"/>
-                            <constraint firstItem="7Uc-kn-jH4" firstAttribute="top" secondItem="7Jn-a9-0AW" secondAttribute="bottom" constant="20" id="YR3-R5-Bz2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Jn-a9-0AW" secondAttribute="trailing" constant="57" id="cU1-jN-JGa"/>
-                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="56" id="nBG-uF-9LK"/>
+                            <constraint firstItem="7Uc-kn-jH4" firstAttribute="top" secondItem="7Jn-a9-0AW" secondAttribute="bottom" constant="20" id="748-CG-DGF"/>
+                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="BsL-cg-JsI"/>
+                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="centerX" secondItem="7Uc-kn-jH4" secondAttribute="centerX" id="HGa-Xl-0Mv"/>
+                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="56" id="b3k-EM-Yxy"/>
+                            <constraint firstItem="7Jn-a9-0AW" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="qMq-lS-TtE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="fffa" destination="7Uc-kn-jH4" id="9yz-ul-Lck"/>
                         <outlet property="txtInput" destination="7Jn-a9-0AW" id="asm-86-5MZ"/>
                     </connections>
                 </viewController>

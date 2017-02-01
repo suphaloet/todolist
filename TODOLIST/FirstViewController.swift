@@ -9,14 +9,21 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    @IBOutlet weak var itemView: UITableView!
      var arr = ["FirstToDo","SecondToDo"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        UserDefaults.standard.set(arr, forKey: "array")
+        //UserDefaults.standard.set(arr, forKey: "array")
         
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.object(forKey: "array") != nil{
+        arr = UserDefaults.standard.object(forKey: "array") as! [String]
+        self.itemView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {

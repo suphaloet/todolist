@@ -11,7 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     
-    
+    var item = [String()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +26,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtInput: UITextField!
 
     @IBAction func add(_ sender: Any) {
-        
+        item.append(txtInput.text!)
+        UserDefaults.standard.set(item, forKey: "array")
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
